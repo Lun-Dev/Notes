@@ -1,6 +1,11 @@
-function myFunction(a, b) {
-    console.log(a + b)
-}
+//https://javascript.plainenglish.io/callback-functions-in-javascript-b90684dbae6d
+//https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
 
-let myFunction2 = myFunction
-myFunction2(1, 2)
+function takeOrder() {
+    setTimeout(() => {
+       return (Math.random() * 10) <= 5 ? 'Coffee' : 'Tea';
+    }, 1000);
+}
+let order = takeOrder();
+console.log('Order is for: ' + order);
+// Order is for: undefined
