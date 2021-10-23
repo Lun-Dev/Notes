@@ -21,7 +21,7 @@ const person2 = {
   lastName: "King"
 }
 
-console.log(person1.fullName.call(person2))
+console.log(person1.fullName.call(person2)) //using person1 as a template, fill person2's info into person1
 
 // New operator (Like a template)
 function guy(firstName, lastName, age) {
