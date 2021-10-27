@@ -20,7 +20,7 @@ sample()
 
 let sample2 = sample.bind(duck)
 sample2()
-// Bind establish connection again with the object
+// Bind establish connection again with the object (Bind the object)
 
 // Output: "The name of this duck is Bob."
 
