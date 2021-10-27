@@ -38,3 +38,5 @@ const doggie = {
 
 const dogSound = talk.bind(doggie) // now talk can refer to doggie for "sound"
 dogSound()
+
+// function BINDS variable
