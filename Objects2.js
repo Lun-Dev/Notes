@@ -17,3 +17,24 @@ function books(title, author, pages, read) {
 
 const hobbit = new books("The Hobbit", "J.K.", 569, "not read");
 console.log(hobbit.info())
+
+// More example
+function talk() {
+	console.log(this.sound)
+}
+
+talk()
+/* Output: undefined because "this" is now referring to the global object
+*/
+
+// Fixed
+function talk() {
+	console.log(this.sound) // what is "this" referring to? Needs to know
+}
+
+const doggie = {
+    sound: "woof woof" // this object has a "sound" property
+}
+
+const dogSound = talk.bind(doggie) // now talk can refer to doggie for "sound"
+dogSound()
