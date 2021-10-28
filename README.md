@@ -22,3 +22,13 @@
 | * No properties       | * Many Properties      |
 | * No methods          | * Can have methods     |
 | * Immutable           | * Mutable              |
+
+- Ways to create Javascript object
+    1. Object literal (eg. {})
+    2. **new** keyword
+    3. Object Constructor
+    4. Object.create()
+
+- If person is an object, you cannot just **const x = person;**
+    1. This is because **x** is not a copy of **person**
+    2. Any changes to **x** equals changes to **person**
