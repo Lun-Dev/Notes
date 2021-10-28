@@ -5,3 +5,11 @@
     1. Complicates the code
     2. Slow execution time
     3. Unexpected result
+
+| Primitive Datatype    | Non-primitive Datatype |
+| --------------------- | ---------------------- |
+| * Strings             | * Objects              |
+| * Numbers             |                        |
+| * Booleans            |                        |
+| * Null                |                        |
+| * Undefined           |                        |
