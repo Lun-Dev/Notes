@@ -6,6 +6,8 @@
     2. Slow execution time
     3. Unexpected result
 
+- Datatype Difference
+
 | Primitive Datatype    | Non-primitive Datatype |
 | --------------------- | ---------------------- |
 | * Strings             | * Objects              |
@@ -13,3 +15,10 @@
 | * Booleans            |                        |
 | * Null                |                        |
 | * Undefined           |                        |
+
+| Primitive Datatype    | Non-primitive Datatype |
+| --------------------- | ---------------------- |
+| * Single Value        | * Many Values          |
+| * No properties       | * Many Properties      |
+| * No methods          | * Can have methods     |
+| * Immutable           | * Mutable              |
