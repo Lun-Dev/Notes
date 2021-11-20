@@ -13,3 +13,13 @@ const dog = () => {
 
 const sniffles = dog()
 sniffles.talk() // Output: "woof"
+
+const person = (name, age) => {
+    const sayHello = () => console.log ('Hello');
+    return { name, age, sayHello };
+}
+
+const jeff = person('Jeff', 26);
+console.log(jeff.name)
+
+jeff.sayHello()
