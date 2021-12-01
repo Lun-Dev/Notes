@@ -21,19 +21,23 @@
 // }
 
 class Book {
-    constructor(title, author, pages) {
-        this.title = title,
-        this.author = author,
-        this.pages = pages,
-        this.read = false
+	constructor(title, author, pages) {
+  	this.title = title,
+    this.author = author,
+    this.pages = pages,
+    this.read = false
   }
-    read() {
-  	    this.read = true
+  read() {
+  	this.read = true
   }
 }
 
 class NewBook extends Book {
-  constructor(title,author,pages) {
-    super(title,author,pages);
+	constructor(title, author, pages) {
+  	super(title, author, pages)
+    this.read = true
   }
 }
+
+const book1 =  new Book("Harry Potter", "JK ROW", 323)
+console.log(book1.title)
