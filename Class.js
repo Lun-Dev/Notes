@@ -32,4 +32,8 @@ class Book {
   }
 }
 
-let newBook 
+class NewBook extends Book {
+  constructor(title,author,pages) {
+    super(title,author,pages);
+  }
+}
