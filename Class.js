@@ -35,18 +35,27 @@ class Media {
   }
   
   class Book extends Media {
-      constructor(title) {
-        super(title)
+      constructor(author, title, pages) {
+        super(title);
+        this._author = author;
+        this._pages = pages;
     }
-  }
-  
-  let book1 = new Book("Mario")
-  book1.addRating(10)
-  console.log(book1.ratings)
-  
-  
-  
 
+      get author() {
+        return this._author;
+      }
+
+      get pages() {
+        return this._pages;
+      }
+  }
+
+let book1 = new Book("Mario", "Good Book", 30)
+book1.addRating(10)
+console.log(book1.ratings)
+console.log(book1.title)
+console.log(book1.author)
+console.log(book1.pages)
 
 // class Dog {
 //     constructor(name) {
