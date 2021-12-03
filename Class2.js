@@ -1,3 +1,4 @@
+const submit = document.getElementById("submit")
 const libraryArray = [];
 
 class Book {
@@ -5,7 +6,7 @@ class Book {
         this._title = title;
         this._author = author;
         this._pages = pages;
-        this._read = false;
+        this._read = read;
     }
 
     get title() {
